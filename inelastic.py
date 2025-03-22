@@ -85,6 +85,7 @@ running = True
 # Create particles only once, outside the game loop
 for i in range(8):
     new_particle = Particle(random.randrange(0, width), random.randrange(0, height), random.randrange(1, 20))
+    particles.append(new_particle)
 
 # Set up text
 font = pygame.font.Font(None, 30)
